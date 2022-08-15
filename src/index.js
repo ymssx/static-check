@@ -171,9 +171,11 @@ function checkFileSize(list, maxSize = 150) {
   }
   console.error(chalk.red(`These files exceed the ${maxSize}kb size limit:`));
   for (const path in errorMap) {
-    console.error(`  - ${chalk.red(Math.round(errorMap[path] / 1000))}kb ${chalk.blue(path)}`);
+    console.error(`  - ${chalk.red(Math.round(errorMap[path] / 1000 + 'kb'))} ${chalk.blue(path)}`);
   }
-  process.exit(1);
+  if (Object.keys(errorMap).length) {
+    process.exit(1);
+  }
 }
 
 
