@@ -3,7 +3,7 @@ A tool to help you scan the repeat static pictures.
 ## Usage
 
 ```
-yarn add @byted/static-check --dev
+yarn add static-check --dev
 ```
 
 you can add a command in `scripts` of file "package.json"
