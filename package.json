@@ -1,5 +1,5 @@
 {
-  "name": "@byted/static-check",
+  "name": "static-check",
   "version": "1.1.5",
   "description": "check the similarity of static files",
   "main": "src/index.js",
